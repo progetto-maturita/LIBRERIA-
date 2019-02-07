@@ -3,15 +3,23 @@
     <context-param>
         <description>link url del db</description>
         <param-name>DB-URL</param-name>
-        <param-value>jdbc:sqlserver://DESKTOP-O9J7C1E\\HASSAN;databaseName=LIBRERIA;integratedSecurity=true;</param-value>
+        <param-value>jdbc:sqlserver://DESKTOP-O9J7C1E\\HASSAN:1433;databaseName=LIBRERIA;integratedSecurity=true;</param-value>
     </context-param>
     <servlet>
         <servlet-name>loginDipendente</servlet-name>
         <servlet-class>Servlets.loginDipendente</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>registrazioneNuovoUtente</servlet-name>
+        <servlet-class>Servlets.registrazioneNuovoUtente</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>loginDipendente</servlet-name>
         <url-pattern>/loginDipendente</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>registrazioneNuovoUtente</servlet-name>
+        <url-pattern>/registrazioneNuovoUtente</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

@@ -1,3 +1,10 @@
+<%-- 
+    Document   : Log-in
+    Created on : 5-feb-2019, 19.42.41
+    Author     : hassa
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,11 +18,9 @@
 
 <body>
 	<header>
-	</header>
-	
-	<div class="container" style="margin-top: 6%;">
+            <div class="container" style="margin-top: 6%;">
 		<div class="content-section">
-			<form action="/progetto_maturita/LoginDipendente" method="POST">
+			<form action="loginDipendente" method="POST">
 		 		 <div class="form-group">
 		  	 		 <label for="Username">Username</label>
 		  	 		 <input type="text" class="form-control" name="username_txt" placeholder="Username">
@@ -28,6 +33,9 @@
 			</form>
 		</div>
 	</div>
+	</header>
+	
+	
 	
 </body>
 </html>
